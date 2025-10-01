@@ -50,7 +50,19 @@ Every read receives the most recent write or an error. In other words, all nodes
 Every request receives a response (success or failure), without guarantee that it contains the most recent write.
 
 ## P: Partition Tolerance
-The system continues to operate despite network partitions (communication breakdowns between nodes). 
+The system continues to operate despite network partitions (communication breakdowns between nodes).
+- IF ANY PART OF SYSTM FAILS OR RAISE AND ERROR PRTITION TOLLERANCE HELPS TO KEPP ON RUNNING OTHER FUNCTIONS WITHIUTH CLOSING FULL SYSTEM.
+
+
+### CAP theorem says you can only have two out of these three guarantees at the same time in a distributed system — never all three.
+When a network partition (communication break) happens, servers can’t talk to each other.
+
+To be consistent, servers must agree on the latest data, so some may reject requests, reducing availability.
+
+To be available, servers respond anyway, even if they don’t have the latest data, reducing consistency.
+
+So during a partition, you must choose either consistency or availability, but not both.
+
 
 
 
