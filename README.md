@@ -65,4 +65,32 @@ So during a partition, you must choose either consistency or availability, but n
 
 
 
+# SQL and NOSQL
+## SQL
+SQL stands for Structured Query Language.
+
+It refers to relational databases that store data in tables with rows and columns.
+
+Uses fixed schemas to define the structure of data.
+
+Examples: MySQL, PostgreSQL, Oracle, SQL Server.
+
+## NOSQL
+NoSQL means “Not Only SQL” or non-relational databases.
+
+Stores data in flexible formats like key-value pairs, documents, graphs, or wide-columns.
+
+Usually schema-less or has dynamic schemas.
+
+Examples: MongoDB (document), Redis (key-value)
+
+### DIFFERENCES
+| Aspect         | SQL                              | NoSQL                                              |
+| -------------- | -------------------------------- | -------------------------------------------------- |
+| Data Model     | Relational (tables)              | Non-relational (documents, key-value, graph, etc.) |
+| Schema         | Fixed schema                     | Flexible or dynamic schema                         |
+| Query Language | SQL                              | Varies by database (e.g., JSON queries, APIs)      |
+| Scalability    | Vertical scaling (scale-up)      | Horizontal scaling (scale-out)                     |
+| Transactions   | Strong ACID compliance           | Often eventual consistency, some support ACID      |
+| Use Cases      | Complex queries, structured data | Big data, real-time apps, flexible data            |
 
